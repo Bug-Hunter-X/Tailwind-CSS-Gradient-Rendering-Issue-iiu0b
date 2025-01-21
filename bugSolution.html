@@ -1,0 +1,13 @@
+```html
+<div class="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-lg shadow-md">
+  <!-- Content here -->
+</div>
+```
+
+**Explanation of potential fixes:**
+
+1. **Conflicting Styles:** Ensure no other styles (inline styles, CSS rules from other sources) are overriding the gradient. Use your browser's developer tools to inspect the element and check for conflicting styles.
+
+2. **Class Order:**  In some cases, the order of Tailwind classes matters. Experiment with rearranging the classes to ensure the `bg-gradient-to-r` class is applied correctly.
+
+3. **Missing Configuration:** Ensure that you have Tailwind CSS properly configured in your project.  Check your `tailwind.config.js` (or `tailwind.config.cjs`) file to ensure that the correct paths are configured and that the `theme` section is correctly set up if you're customizing the gradient colors.
